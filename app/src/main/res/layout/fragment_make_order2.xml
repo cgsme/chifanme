@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ListView
+        android:id="@+id/lv_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_right_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="右边条目"
+            android:textColor="#000000"
+            android:background="@color/gray"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/lv_Right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+        </ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

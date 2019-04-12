@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 默认时的颜色 -->
+    <item android:state_window_focused="false"
+        android:drawable="@color/white" />
+
+    <!-- 触摸模式下单击时的颜色 -->
+   <!-- <item android:state_pressed="true"
+        android:drawable="@color/backgroundGray"  />
+-->
+    <item android:state_pressed="true">
+        <color android:color="@color/clickGray"/>
+    </item>
+</selector>

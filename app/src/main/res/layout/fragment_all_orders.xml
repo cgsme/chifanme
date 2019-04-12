@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/shop_photo"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="11dp"
+                android:src="@mipmap/icon_persion_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="杨国福麻辣烫"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/shop_name"
+                        android:layout_alignTop="@+id/icon_arrow"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginStart="13dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_arrow"
+                        android:id="@+id/icon_arrow"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@+id/shop_name"
+                        android:layout_toEndOf="@+id/shop_name"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginStart="11dp" />
+
+                    <TextView
+                        android:text="待评价"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/icon_arrow"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#66CCFF"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="鹌鹑蛋"
+                            android:id="@+id/text_foot1"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginStart="13dp"/>
+
+                        <TextView
+                            android:text="x N"
+                            android:id="@+id/text_number1"
+                            android:layout_alignTop="@+id/text_foot1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="鸡胸肉"
+                            android:id="@+id/text_foot2"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginStart="13dp"/>
+
+                        <TextView
+                            android:text="+1"
+                            android:id="@+id/text_number2"
+                            android:layout_alignTop="@+id/text_foot2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="煎蛋"
+                            android:id="@+id/text_foot3"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginStart="13dp"/>
+
+                        <TextView
+                            android:text="+1"
+                            android:id="@+id/text_number3"
+                            android:layout_alignTop="@+id/text_foot3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="..."
+                            android:id="@+id/text_lue"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginStart="13dp"/>
+
+                        <TextView
+                            android:text="￥10.2"
+                            android:textColor="#000000"
+                            android:id="@+id/text_money"
+                            android:layout_alignTop="@+id/text_lue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+
+                        <TextView
+                            android:text="共11件商品,实付"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/text_lue"
+                            android:layout_alignBottom="@+id/text_lue"
+                            android:layout_toLeftOf="@+id/text_money"
+                            android:layout_toStartOf="@+id/text_money"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginEnd="5dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="18dp"
+            android:background="#66CCFF"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/Button_login_theme"
+                android:background="@color/colorAccent"
+                android:text="再来一单"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="80dp"
+                android:layout_height="35dp" />
+
+            <Button
+                style="@style/Button_login_theme"
+                android:background="@color/colorAccent"
+                android:text="确认收货"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="80dp"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

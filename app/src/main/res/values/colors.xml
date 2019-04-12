@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- ReFreshLayout Color Value-->
+    <color name="swiperefresh_color1">#ff00ddff</color>
+    <color name="swiperefresh_color2">#ffffbb33</color>
+    <color name="swiperefresh_color3">#ffff4444</color>
+    <color name="swiperefresh_color4">#ffaa66cc</color>
+
+
+    <color name="appThemeColor">#4377C1</color>
+    <color name="appThemeColor_night">#3a68a9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white60">#DFDFDF</color>
+    <color name="lineColor">#EDEDED</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="lineColorGray">#e7e7e7</color>
+    <color name="mainGray">#9A9A9A</color>
+    <color name="mainBlack">#202020</color>
+    <color name="blackGray">#686868</color>
+    <color name="backgroundGray">#EAEDF1</color>
+    <color name="tabTextGray">#414A59</color>
+    <color name="blackGreen">#465b47</color>
+    <color name="blueGray">#444e5a</color>
+    <color name="bannerBlue">#76caee</color>
+    <color name="clickGray">#e7e7e7</color>
+    <color name="clickPink">#FF1493</color>
+    <color name="tabSlidingGray">#fafafa</color>
+    <color name="nullColor">#00ffffff</color>
+</resources>

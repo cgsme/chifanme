@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/titleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/search_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_search"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="搜索商家、商品名称"
+                    android:textColor="@color/tabTextGray"
+                    android:textSize="@dimen/text_size_16" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_home_banner_item"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:background="@color/white">
+
+            <com.jude.rollviewpager.RollPagerView
+                android:id="@+id/fragment_roll_view_pager"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:rollviewpager_play_delay="3000" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_home_menu_item"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/white"
+            android:padding="@dimen/padding_8">
+
+            <RadioGroup
+                android:id="@+id/activity_service_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/activity_service_lost_item"
+                    style="@style/home_menu_item"
+                    android:drawableTop="@mipmap/activity_service_lost"
+                    android:text="美食" />
+
+                <RadioButton
+                    android:id="@+id/activity_service_market_item"
+                    style="@style/home_menu_item"
+                    android:drawableTop="@mipmap/activity_service_market"
+                    android:text="甜品饮品" />
+
+                <RadioButton
+                    android:id="@+id/activity_service_repair_item"
+                    style="@style/home_menu_item"
+                    android:drawableTop="@mipmap/activity_service_repair"
+                    android:text="商店超市" />
+
+                <RadioButton
+                    android:id="@+id/activity_service_more_item"
+                    style="@style/home_menu_item"
+                    android:drawableTop="@mipmap/activity_service_more"
+                    android:text="果蔬生鲜" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_home_menu_item1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/white"
+            android:padding="@dimen/padding_8">
+
+            <RadioGroup
+                android:id="@+id/activity_service_radio_group1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/activity_service_lost_item1"
+                    style="@style/home_menu_item"
+                    android:drawableTop="@mipmap/activity_service_lost"
+                    android:text="新店特惠" />
+
+                <RadioButton
+                    android:id="@+id/activity_service_market_item1"
+                    style="@style/home_menu_item"
+                    android:drawableTop="@mipmap/activity_service_market"
+                    android:text="准时达" />
+
+                <RadioButton
+                    android:id="@+id/activity_service_repair_item1"
+                    style="@style/home_menu_item"
+                    android:drawableTop="@mipmap/activity_service_repair"
+                    android:text="简餐" />
+
+
+                <RadioButton
+                    android:id="@+id/activity_service_more_item1"
+                    style="@style/home_menu_item"
+                    android:drawableTop="@mipmap/activity_service_more"
+                    android:text="更多" />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="—— 商家 ——"
+            android:textColor="@color/blackGray"
+            android:textSize="20sp" />
+
+        <!--<view style="@style/h_line" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgroundGray"/>
+
+        <ListView
+            android:id="@+id/lv_business"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

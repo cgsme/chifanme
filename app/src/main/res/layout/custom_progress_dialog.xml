@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <LinearLayout android:id="@+id/body"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:paddingStart="8dip"
+        android:paddingTop="10dip"
+        android:paddingEnd="8dip"
+        android:paddingBottom="10dip">
+
+        <ImageView android:id="@+id/progress"
+            style="@style/custom_progress_dialog"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:max="10000"
+            android:background="@drawable/custom_progress_animation"
+            android:layout_marginRight="12dip" />
+
+        <TextView android:id="@+id/message"
+            android:textColor="@color/blackGray"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</FrameLayout>

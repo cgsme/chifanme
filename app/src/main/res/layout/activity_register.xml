@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_register_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/register_title_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent">
+
+                <ImageView
+                    android:id="@+id/iv_register_back"
+                    style="@style/buttonBack"/>
+
+                <TextView
+                    style="@style/titleStyleNoColor"
+                    android:text="欢迎注册"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_register_phone_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/register_title_item"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/activity_register_edit_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:digits="0123456789"
+                    android:drawableLeft="@drawable/login_icn_mobile"
+                    android:drawablePadding="8dp"
+                    android:hint="@string/activity_register_hint_phone"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:nextFocusForward="@+id/activity_register_password_background"
+                    android:textColor="@color/mainBlack"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_register_password_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_register_phone_background"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/activity_register_edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/login_icn_password"
+                    android:drawablePadding="8dp"
+                    android:hint="@string/activity_register_hint_password"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textColor="@color/mainBlack"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/activity_register_button"
+                style="@style/Button_register_theme"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_below="@+id/activity_register_password_background"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="注册" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGray"
+    android:orientation="vertical"
+    android:id="@+id/activity_register_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_background_height"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/activity_register_edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:digits="0123456789"
+            android:hint="@string/activity_register_hint_phone"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="11"
+            android:nextFocusForward="@+id/activity_register_edit_password"
+            android:singleLine="true"
+            android:textColor="@color/mainBlack"
+            android:textColorHint="@color/mainGray"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <View style="@style/h_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_background_height"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/activity_register_edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:hint="@string/activity_register_hint_password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:nextFocusForward="@+id/activity_register_edit_code"
+            android:textColor="@color/mainBlack"
+            android:textColorHint="@color/mainGray"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <View style="@style/h_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_background_height"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dip">
+
+        <EditText
+            android:id="@+id/activity_register_edit_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:background="@null"
+            android:digits="0123456789"
+            android:hint="@string/activity_register_hint_code"
+            android:maxLength="4"
+            android:textColor="@color/mainBlack"
+            android:textColorHint="@color/mainGray"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/activity_register_button_send_code"
+            style="@style/Button_send_code_theme"
+            android:layout_gravity="center_vertical"
+            android:text="@string/activity_register_register_send_code"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_register_button_register"
+        style="@style/Button_login_theme"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:text="@string/activity_register_register"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>-->

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_search_screen"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/activity_search_back"
+            style="@style/buttonBack"/>
+
+        <SearchView
+            android:id="@+id/sv_search"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:layout_centerHorizontal="true"
+            android:queryHint="搜索商家、商品名称 " />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tabTextGray"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/gray"
+        android:text="查询结果:"/>
+
+    <ListView
+        android:id="@+id/lv_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textSize="20sp"
+        android:textColor="@color/tabTextGray"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="暂无结果"/>
+
+</LinearLayout>

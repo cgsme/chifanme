@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomSheetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="100dp"
+            android:id="@+id/typeRecyclerView"
+            android:layout_height="match_parent"/>
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="#fff"-->
+        <!--android:id="@+id/itemRecyclerView"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--</android.support.v7.widget.RecyclerView>-->
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:id="@+id/itemListView"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</com.flipboard.bottomsheet.BottomSheetLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <com.flipboard.bottomsheet.BottomSheetLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bottomSheetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/left_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="23"
+                    android:background="@android:color/darker_gray" />
+
+                <com.tutu.chifanme.utils.pinnedheaderlistview.PinnedHeaderListView
+                    android:id="@+id/pinnedListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:background="@android:color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.flipboard.bottomsheet.BottomSheetLayout>-->

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#FFFFFF">
+
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/evaluate_number"
+                    android:text="4.5"
+                    android:textSize="35sp"
+                    android:textColor="#FFFF00"
+                    android:layout_marginTop="13dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/total_evaluate_number"
+                    android:text="综合评分"
+                    android:textColor="#696969"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/good_evaluate_number"
+                    android:text="商家好评率72%"
+                    android:textColor="#A9A9A9"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:background="#66CCFF"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="1px"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/service_evaluate"
+                    android:text="配送评分"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/shop_evaluate"
+                    android:text="商家评分"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    android:stepSize="0.5"
+                    android:progressTint="#FFD700"
+                    android:layout_marginTop="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/ratingBar_Small_1" />
+
+                <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    android:stepSize="0.5"
+                    android:progressTint="#FFD700"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/ratingBar_Small_2" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="4.5"
+                    android:textSize="16sp"
+                    android:textColor="#FFD700"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="4.5"
+                    android:textSize="16sp"
+                    android:textColor="#FFD700"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="130dp"
+            android:background="#FFFFFF"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/persion_photo"
+                android:layout_marginTop="5dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/icon_persion_photo"/>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="1520****121"
+                            android:textSize="12sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView" />
+
+                        <RatingBar
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:numStars="5"
+                            android:rating="3.5"
+                            android:stepSize="0.5"
+                            android:progressTint="#FF0000"
+                            android:layout_marginTop="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ratingBar_Small_persion" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="32分钟送达"
+                        android:textSize="10sp"
+                        android:layout_marginTop="22dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:text="2016-11-02 12:27"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/evaluate_date"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="评价还不错，评价还不错，评价还不错，评价还不错，评价还不错，"
+                    android:textSize="13sp"
+                    android:textColor="#000000"
+                    android:maxEms="15"
+                    android:maxLines="3"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/prision_evaluate" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <ImageView
+                        android:id="@+id/image_good_foot"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@mipmap/icon_good_foot"/>
+
+                    <TextView
+                        android:text="大鸡腿,小熊饼干"
+                        android:textSize="12sp"
+                        android:textColor="#A9A9A9"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/text_good_foot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <ImageView
+                        android:id="@+id/image_good_service"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@mipmap/icon_good_service"/>
+                    <TextView
+                        android:text="口气好，速度快"
+                        android:textSize="12sp"
+                        android:textColor="#A9A9A9"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_good_service"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

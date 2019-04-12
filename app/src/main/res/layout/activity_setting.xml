@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/setting_back"
+            style="@style/buttonBack"/>
+
+        <TextView
+            style="@style/titleStyleNoColor"
+            android:text="设置"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="302dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_setting_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/icon_look"/>
+
+            <ImageView
+                android:id="@+id/image_setting_backinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:src="@mipmap/icon_setting_back"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/text_setting_backinfo"
+                android:text="意见反馈"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/image_setting_backinfo"
+                android:layout_toEndOf="@+id/image_setting_backinfo" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#66CCFF"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/image_setting_back1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/icon_look"
+                />
+            <ImageView
+                android:id="@+id/image_setting_cleaninfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:src="@mipmap/icon_setting_clean"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/text_setting_cleaninfo"
+                android:text="清理缓存"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/image_setting_cleaninfo"
+                android:layout_toEndOf="@+id/image_setting_cleaninfo" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#66CCFF"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/image_setting_back2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/icon_look"
+                />
+            <ImageView
+                android:id="@+id/image_setting_serviceinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:src="@mipmap/icon_setting_service"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/text_setting_serviceinfo"
+                android:text="服务条款"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/image_setting_serviceinfo"
+                android:layout_toEndOf="@+id/image_setting_serviceinfo" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#66CCFF"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/image_setting_back3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/icon_look"
+                />
+            <ImageView
+                android:id="@+id/image_setting_frush"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:src="@mipmap/icon_setting_frush"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/text_setting_frush"
+                android:text="检查更新"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/image_setting_frush"
+                android:layout_toEndOf="@+id/image_setting_frush" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#66CCFF"/>
+
+        <RelativeLayout
+            android:id="@+id/setting_about_us_item"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_item_bg"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/image_setting_back4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/icon_look"
+                />
+            <ImageView
+                android:id="@+id/image_setting_about"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:src="@mipmap/icon_setting_about"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/setting_about_us"
+                android:text="关于我们"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/image_setting_about"
+                android:layout_toEndOf="@+id/image_setting_about" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/setting_logout"
+            android:text="退出当前账号"
+            style="@style/Button_login_theme"
+            android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

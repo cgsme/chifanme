@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/about_us_back"
+            style="@style/buttonBack"/>
+
+        <TextView
+            style="@style/titleStyleNoColor"
+            android:text="关于我们"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <LinearLayout
+            android:id="@+id/icon_luncher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/ic_app" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_luncher"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前版本  v0.0.3" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_update_item"
+        android:layout_marginTop="10dp"
+        style="@style/help_item">
+
+        <TextView
+            style="@style/help_left_textview"
+            android:text="检查更新" />
+
+        <TextView
+            android:id="@+id/activity_app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:textSize="@dimen/text_size_14"
+            android:text="v0.0.3" />
+
+        <ImageView style="@style/hele_imageview_arrow" />
+
+
+    </RelativeLayout>
+
+    <View style="@style/h_line" />
+
+    <RelativeLayout
+        android:id="@+id/activity_score_item"
+        style="@style/help_item">
+
+        <TextView
+            style="@style/help_left_textview"
+            android:text="去评分" />
+
+        <ImageView style="@style/hele_imageview_arrow" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

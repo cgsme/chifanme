@@ -1,0 +1,230 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--标题样式，带颜色-->
+    <style name="titleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--不带颜色的标题样式-->
+    <style name="titleStyleNoColor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- 返回按钮样式 -->
+    <style name="buttonBack">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">12sp</item>
+        <item name="android:src">@mipmap/icon_back</item>
+        <item name="android:background">@drawable/selector_back_btn</item>
+    </style>
+
+
+    <!-- 登录页主题色按钮样式 -->
+    <style name="Button_login_theme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:background">@drawable/selector_button_app_theme_80</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <!-- 帮助页面item样式 -->
+    <style name="help_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/selector_item_bg</item>
+    </style>
+    <!-- 帮助页面Textview样式 -->
+    <style name="help_left_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/tabTextGray</item>
+    </style>
+    <!-- 帮助页面箭头样式-->
+    <style name="hele_imageview_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:src">@mipmap/icon_personal_information_arrow</item>
+    </style>
+
+    <!-- 自定义ProgressDialog样式 -->
+    <style name="custom_progress_dialog" parent="@android:style/Widget.ProgressBar">
+        <item name="android:minWidth">56dip</item>
+        <item name="android:maxWidth">56dip</item>
+        <item name="android:minHeight">56dip</item>
+        <item name="android:maxHeight">56dip</item>
+    </style>
+
+    <!-- 首页底部导航样式 -->
+    <style name="tab_menu_item">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@drawable/tab_bottom_text_theme</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- 横向线条 -->
+    <style name="h_line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">@color/lineColor</item>
+    </style>
+
+    <!-- 横向线条主题色 -->
+    <style name="h_line_blue">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">@color/appThemeColor</item>
+    </style>
+
+    <!-- 横向线条深灰色 -->
+    <style name="h_line_gray">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">@color/lineColorGray</item>
+    </style>
+
+    <!-- 纵向线条 -->
+    <style name="v_line">
+        <item name="android:layout_width">1dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/lineColor</item>
+    </style>
+
+    <!-- 纵向线条主题色 -->
+    <style name="v_line_blue">
+        <item name="android:layout_width">1dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/appThemeColor</item>
+    </style>
+
+    <!-- 纵向线条深灰色 -->
+    <style name="v_line_gray">
+        <item name="android:layout_width">1dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/lineColorGray</item>
+    </style>
+
+    <!-- 个人资料页面箭头样式 -->
+    <style name="personal_information_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:src">@mipmap/icon_arrow</item>
+    </style>
+
+    <!-- 欢迎页按钮样式 -->
+    <style name="Button_welcome_white60">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:background">@drawable/selector_button_app_theme</item>
+        <item name="android:textColor">@drawable/selector_button_text_app_theme</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--注册页主题色按钮样式-->
+    <style name="Button_register_theme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:background">@drawable/selector_button_app_theme_80</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <!-- 个人资料页面item样式 -->
+    <style name="personal_information_press_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/selector_item_bg</item>
+    </style>
+    <!-- 个人资料页面左边Textview样式 -->
+    <style name="personanl_information_left_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textColor">@color/tabTextGray</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+    <!-- 个人资料页面右边Textview样式 -->
+    <style name="personal_information_right_textview">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:textColor">@color/tabTextGray</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <!-- 设置页面条目样式 -->
+    <style name="setting_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/selector_item_bg</item>
+    </style>
+    <!-- 设置页面左边Textview样式 -->
+    <style name="setting_left_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/tabTextGray</item>
+    </style>
+    <!-- 设置页面箭头样式 -->
+    <style name="setting_imageview_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:src">@mipmap/icon_arrow</item>
+    </style>
+
+    <!-- 首页菜单样式 -->
+    <style name="home_menu_item">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/tabTextGray</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>
